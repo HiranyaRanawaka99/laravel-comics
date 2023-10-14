@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel</title>
+  <title>@yield('page-title')</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,18 @@
 </head>
 
 <body>
-  <h1>ciao!</h1>
+  
+<!-- header -->
+<header>@include('partials._navbar')</header>
+
+<section class="jumbotron"> @include('partials._jumbotron')</section>
+
+<main>@yield('main')</main>
+
+<footer>@include('partials._footer')</footer>
+
+
+
 </body>
 
 </html>
