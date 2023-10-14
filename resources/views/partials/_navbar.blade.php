@@ -7,7 +7,7 @@
 <div class="header-line">
     <p>DV power visa</p>
 </div>
-<div class="header-container ">
+<div class="header-container wrapper">
     <div class="div-logo">
     <img src= "{{ url('/images/dc-logo.png') }}" alt="DC-logo">
       </div>

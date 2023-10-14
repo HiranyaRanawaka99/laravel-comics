@@ -9,7 +9,7 @@
 <!-- MAIN -->
 @section('main')
 
-<div class="comics-container">
+<div class="comics-container wrapper">
   <div class="content">
       @foreach ($comics_list as $comic)
       <div class="card-img" >

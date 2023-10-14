@@ -6,6 +6,12 @@
 // BOOTSTRAP
 @import "~bootstrap/scss/bootstrap";
 
+// CONTAINERS
+
+.wrapper {
+    padding: 0 3rem;
+}
+
 // HEADER
 .header-line {
     background-color: $primary-color;
@@ -47,6 +53,31 @@
                 border-bottom: 2px solid $primary-color;
             }
         }
+    }
+}
+
+// JUMBOTRON
+
+.jumbotron {
+    position: relative;
+
+    img {
+        height: 350px;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    button {
+        position: absolute;
+        bottom: -3%;
+        left: 8rem;
+
+        background-color: $primary-color;
+        color: $white-text;
+        font-weight: 700;
+        border: 0;
+        padding: 0.5rem;
     }
 }
 
@@ -99,26 +130,46 @@
     }
 }
 
-// JUMBOTRON
+// FOOTER
 
-.jumbotron {
-    position: relative;
+.footer-container {
+    background-image: url("/images/footer-bg.jpg");
+    background-size: cover;
 
-    img {
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
+    display: flex;
+
+    .links {
+        width: 50%;
+        padding-top: 1rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        color: $grey-text;
+
+        h4 {
+            padding-bottom: 0.5rem;
+            color: $white-text;
+        }
+
+        ul {
+            margin-bottom: 0;
+            padding-left: 0;
+            a {
+                color: $grey-text;
+            }
+        }
     }
+    .footer-logo {
+        display: flex;
+        justify-content: end;
 
-    button {
-        position: absolute;
-        bottom: -3%;
-        left: 8rem;
+        width: 700px;
+        padding: 0;
 
-        background-color: $primary-color;
-        color: $white-text;
-        font-weight: 700;
-        border: 0;
-        padding: 0.5rem;
+        img {
+            object-fit: none;
+        }
     }
 }

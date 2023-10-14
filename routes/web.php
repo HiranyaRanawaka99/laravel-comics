@@ -17,7 +17,9 @@ Route::get('/', function () {
 
     $comics_list = config('comics_db.comics_list');
 
+    $footer_links = config('comics_db.footer_links');
 
-    return view('homepage', compact('comics_list'));
+
+    return view('homepage', compact('comics_list', 'footer_links'));
 })->name('home');
 
