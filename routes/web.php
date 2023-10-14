@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+    $header_links = config('comics_db.header_links');
+
     $comics_list = config('comics_db.comics_list');
 
     $footer_links = config('comics_db.footer_links');
@@ -22,6 +24,6 @@ Route::get('/', function () {
     $products = config('comics_db.products');
 
 
-    return view('homepage', compact('comics_list', 'footer_links', 'products'));
+    return view('homepage', compact('header_links','comics_list', 'footer_links', 'products'));
 })->name('home');
 

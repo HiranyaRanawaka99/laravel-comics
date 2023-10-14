@@ -21,36 +21,46 @@
 
 .header-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
-    height: 100px;
 
     .div-logo {
         width: 80px;
         height: 80px;
     }
 
-    ul {
-        min-height: 100%;
-    }
+    .links {
+        display: flex;
 
-    li {
-        display: inline-block;
-        height: 100%;
+        ul {
+            min-height: 100%;
+            padding: 0.5rem;
+            margin: 0;
+        }
 
-        font-weight: 800;
-        padding: 2rem 1rem;
-
-        a {
+        li {
             display: inline-block;
-            color: black;
             height: 100%;
 
-            &:hover {
-                border-bottom: 2px solid $primary-color;
+            font-size: 0.8rem;
+            font-weight: 800;
+
+            a {
+                display: inline-block;
+                color: black;
+                height: 100%;
+
+                &:hover {
+                    border-bottom: 2px solid $primary-color;
+                }
             }
         }
+    }
+
+    .search {
+        border: none;
+        border-bottom: 2px solid $primary-color;
     }
 }
 

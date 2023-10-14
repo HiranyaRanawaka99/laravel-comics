@@ -10,15 +10,18 @@
 <div class="header-container wrapper">
     <div class="div-logo">
     <img src= "{{ url('/images/dc-logo.png') }}" alt="DC-logo">
-      </div>
-        <ul>
-          <li>
-            <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" aria-current="page" href= " {{ route('home') }}">
-                HOME
-            </a>
-            <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" aria-current="page" href= " {{ route('home') }}">
-                LINK
-            </a>
-         </li>
-    </ul>
+    </div>
+    <div class="links">
+      @foreach ($header_links as $link)
+      <ul>
+        <li>
+          <a class="nav-link" href= " {{ $link['url'] }}">
+            {{ $link['text']}}
+          </a>
+        </li>
+      </ul>
+      @endforeach
+    </div>
+
+    <input class="search" placeholder="search">
 </div>

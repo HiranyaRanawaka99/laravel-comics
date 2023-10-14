@@ -112,78 +112,131 @@ return [
         ]
     ],
 
-        'footer_links' => [
-            [
-            'title'=> "DC COMICS",
-            'footerLinks' => [
-                "Characters",
-                "Comics",
-                "Movies",
-                "TV",
-                "Games",
-                "Videos",
-                "News",
-                ],
-            ],
-            [
-            'title'=> "DC",
-            'footerLinks'=> [
-                "Terms Of Use",
-                "Privacy policy (New)",
-                "Ad Choices",
-                "Advertising",
-                "Jobs",
-                "Subscriptions",
-                "Talent Workshops",
-                "CPSC Certificates",
-                "Ratings",
-                "Shop Help",
-                "Contact Us",
-                ],
-            ],
-            [
-            'title'=> "SITES",
-            'footerLinks'=> [
-                "DC",
-                "MAD Magazine",
-                "DC Kids",
-                "DC Universe",
-                "DC Power Visa",
-                ],
-            ],
-            [
-            'title'=> "SHOP",
-            'footerLinks'=> ["Shop DC", 
-                        "Shop DC Collectibles"
-                    ],
-            ],
+    'header_links' => [
+        [
+          'text'=> "CHARACTERS",
+          'url'=> "#",
+          'current'=> false,
         ],
+        [
+          'text'=> "COMICS",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "MOVIES",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "TV",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "GAMES",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "COLLECTIBLES",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "VIDEOS",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "FANS",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "NEWS",
+          'url'=> "#",
+          'current'=> false,
+        ],
+        [
+          'text'=> "SHOP",
+          'url'=> "#",
+          'current'=> false,
+        ],
+    ],
 
-        'products' => [
-            [
-            'linkName'=> "DIGITAL COMICS",
-            'url'=> "#",
-            'img'=> "public/images/buy-comics-digital-comics.png",
-            ],
-            [
-            'linkName'=> "DC MERCHNDISE",
-            'url'=> "#",
-            'img'=> "public/images/buy-comics-merchandise.png",
-            ],
-            [
-            'linkName'=> "SUBSCRIPTION",
-            'url'=> "#",
-            'img'=> "public/images/buy-comics-subscriptions.png",
-            ],
-            [
-            'linkName'=> "COMIC SHOP LOCATOR",
-            'url'=> "#",
-            'img'=> "public/images/buy-comics-shop-locator.png",
-            ],
-            [
-            'linkName'=> "DC POWER VISA",
-            'url'=> "#",
-            'img'=> "public/images/buy-dc-power-visa.svg",
+    'footer_links' => [
+        [
+        'title'=> "DC COMICS",
+        'footerLinks' => [
+            "Characters",
+            "Comics",
+            "Movies",
+            "TV",
+            "Games",
+            "Videos",
+            "News",
             ],
         ],
+        [
+        'title'=> "DC",
+        'footerLinks'=> [
+            "Terms Of Use",
+            "Privacy policy (New)",
+            "Ad Choices",
+            "Advertising",
+            "Jobs",
+            "Subscriptions",
+            "Talent Workshops",
+            "CPSC Certificates",
+            "Ratings",
+            "Shop Help",
+            "Contact Us",
+            ],
+        ],
+        [
+        'title'=> "SITES",
+        'footerLinks'=> [
+            "DC",
+            "MAD Magazine",
+            "DC Kids",
+            "DC Universe",
+            "DC Power Visa",
+            ],
+        ],
+        [
+        'title'=> "SHOP",
+        'footerLinks'=> ["Shop DC", 
+                    "Shop DC Collectibles"
+                ],
+        ],
+    ],
+
+    'products' => [
+        [
+        'linkName'=> "DIGITAL COMICS",
+        'url'=> "#",
+        'img'=> "public/images/buy-comics-digital-comics.png",
+        ],
+        [
+        'linkName'=> "DC MERCHNDISE",
+        'url'=> "#",
+        'img'=> "public/images/buy-comics-merchandise.png",
+        ],
+        [
+        'linkName'=> "SUBSCRIPTION",
+        'url'=> "#",
+        'img'=> "public/images/buy-comics-subscriptions.png",
+        ],
+        [
+        'linkName'=> "COMIC SHOP LOCATOR",
+        'url'=> "#",
+        'img'=> "public/images/buy-comics-shop-locator.png",
+        ],
+        [
+        'linkName'=> "DC POWER VISA",
+        'url'=> "#",
+        'img'=> "public/images/buy-dc-power-visa.svg",
+        ],
+    ],
 ];
