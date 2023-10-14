@@ -206,3 +206,45 @@
         }
     }
 }
+
+// FOOTER BOTTOM
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    background-color: $footer-color;
+
+    .sign-up-btn {
+        background-color: $footer-color;
+        color: $white-text;
+        border: 2px solid $primary-color;
+        padding: 0.5rem;
+
+        &:hover {
+            cursor: pointer;
+
+            &:active {
+                border: 3px solid $primary-color;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        p {
+            font-weight: 800;
+            font-size: 0.8rem;
+            color: $primary-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
