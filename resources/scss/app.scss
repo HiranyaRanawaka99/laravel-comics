@@ -9,7 +9,7 @@
 // CONTAINERS
 
 .wrapper {
-    padding: 0 3rem;
+    padding: 1rem 3rem;
 }
 
 // HEADER
@@ -25,8 +25,6 @@
     align-items: center;
 
     height: 100px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 
     .div-logo {
         width: 80px;
@@ -62,9 +60,9 @@
     position: relative;
 
     img {
-        height: 350px;
         width: 100vw;
-        background-size: cover;
+        height: 400px;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 
@@ -130,6 +128,42 @@
     }
 }
 
+// BUY PRODUCTS SECTION
+
+.product-container {
+    background-color: $primary-color;
+
+    .product-list {
+        display: flex;
+        justify-content: space-evenly;
+
+        .product-item {
+            margin-right: 2rem;
+
+            .links {
+                display: flex;
+                align-items: center;
+
+                font-weight: 700;
+
+                p {
+                    color: $white-text;
+                }
+                .product-image {
+                    width: 50px;
+                    height: 55px;
+
+                    margin-right: 1rem;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // FOOTER
 
 .footer-container {
@@ -165,7 +199,6 @@
         display: flex;
         justify-content: end;
 
-        width: 700px;
         padding: 0;
 
         img {

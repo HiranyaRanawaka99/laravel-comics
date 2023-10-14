@@ -19,9 +19,15 @@
 <!-- header -->
 <header>@include('partials._navbar')</header>
 
+<!-- jumbotron -->
 <section class="jumbotron"> @include('partials._jumbotron')</section>
 
+<!-- main -->
 <main>@yield('main')</main>
+
+<!-- products-section -->
+
+<section>@include('partials._buy_products')</section>
 
 <footer>@include('partials._footer')</footer>
 

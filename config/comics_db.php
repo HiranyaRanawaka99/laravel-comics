@@ -157,5 +157,33 @@ return [
                         "Shop DC Collectibles"
                     ],
             ],
-        ]
+        ],
+
+        'products' => [
+            [
+            'linkName'=> "DIGITAL COMICS",
+            'url'=> "#",
+            'img'=> "public/images/buy-comics-digital-comics.png",
+            ],
+            [
+            'linkName'=> "DC MERCHNDISE",
+            'url'=> "#",
+            'img'=> "public/images/buy-comics-merchandise.png",
+            ],
+            [
+            'linkName'=> "SUBSCRIPTION",
+            'url'=> "#",
+            'img'=> "public/images/buy-comics-subscriptions.png",
+            ],
+            [
+            'linkName'=> "COMIC SHOP LOCATOR",
+            'url'=> "#",
+            'img'=> "public/images/buy-comics-shop-locator.png",
+            ],
+            [
+            'linkName'=> "DC POWER VISA",
+            'url'=> "#",
+            'img'=> "public/images/buy-dc-power-visa.svg",
+            ],
+        ],
 ];
